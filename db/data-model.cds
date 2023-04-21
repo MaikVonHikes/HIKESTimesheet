@@ -1,4 +1,4 @@
-namespace hikestimesheet;
+namespace hikes.timesheet;
 using {managed} from '@sap/cds/common';
 
 entity ActivityLogs: managed {
@@ -14,20 +14,20 @@ entity ActivityLogs: managed {
 
 entity Employees: managed {
     key ID: UUID @(Core.Computed: true);
-    FirstName: String;
-    LastName: String;
+    firstName: String;
+    lastName: String;
 }
 
 entity Projects: managed {
     key ID: UUID @(Core.Computed: true);
-    Name: String;
-    Customer: Association to Customer;
-    budget: Decimal(2, 8);
+    name: String;
+    customer: Association to Customers;
+    budget: Decimal(8, 2);
     validFrom: Date;
     validTo: Date;
 }
 
 entity Customers: managed {
     key ID: UUID @(Core.Computed: true);
-    Name: String;
+    name: String;
 }
