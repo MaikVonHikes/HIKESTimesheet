@@ -5,6 +5,7 @@ annotate ts.ActivityLogs with {
     employee    @title: 'Employee';
     project     @title: 'Project';
     date        @title: 'Date';
+    hours       @title: 'Hours';
     timeFrom    @title: 'Start';
     timeTo      @title: 'End';
     break       @title: 'Break';
@@ -19,8 +20,11 @@ annotate ts.Projects with {
     name      @title: 'Name';
     customer  @title: 'Customer';
     budget    @title: 'Budget';
+    remainingBudget @title: 'Remaining Budget';
     validFrom @title: 'Valid From';
     validTo   @title: 'Valid To';
+    contract @title: 'Contract in €';
+    remainingBudgetCriticality @title: 'RemainingBudgetCriticality';
 }
 
 annotate ts.Employees with {

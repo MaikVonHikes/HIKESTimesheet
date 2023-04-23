@@ -30,6 +30,10 @@ annotate TimesheetService.ActivityLogs with @(UI: {
         },
         {
             $Type: 'UI.DataField',
+            Value: hours
+        },
+        {
+            $Type: 'UI.DataField',
             Value: timeFrom
         },
         {
@@ -67,6 +71,10 @@ annotate TimesheetService.ActivityLogs with @(UI: {
             {
                 $Type: 'UI.DataField',
                 Value: date
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: hours
             },
             {
                 $Type: 'UI.DataField',

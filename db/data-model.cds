@@ -6,6 +6,7 @@ entity ActivityLogs: managed {
     employee: Association to Employees;
     project: Association to Projects;
     date: Date;
+    hours: Decimal(2,2);
     timeFrom: Time;
     timeTo: Time;
     break: Decimal;
@@ -23,8 +24,12 @@ entity Projects: managed {
     name: String;
     customer: Association to Customers;
     budget: Decimal(8, 2);
+    remainingBudget: Decimal(8,2);
     validFrom: Date;
     validTo: Date;
+    contract: Integer;
+    remainingBudgetCriticality: Integer
+
 }
 
 entity Customers: managed {

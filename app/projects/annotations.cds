@@ -11,12 +11,21 @@ annotate service.Projects with @(
             Value : budget,
         },
         {
+            $Type: 'UI.DataField',
+            Value: remainingBudget,
+            Criticality : remainingBudgetCriticality,
+        },
+        {
             $Type : 'UI.DataField',
             Value : validFrom,
         },
         {
             $Type : 'UI.DataField',
             Value : validTo,
+        },
+        {
+            $Type: 'UI.DataField',
+            Value: contract,
         },
     ]
 );
