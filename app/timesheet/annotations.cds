@@ -6,7 +6,7 @@ annotate TimesheetService.ActivityLogs with @(UI: {
         TypeNamePlural: 'Activity Logs',
         Title         : {
             $Type: 'UI.DataField',
-            Value: ID
+            Value: date
         },
         Description   : {
             $Type: 'UI.DataField',
@@ -14,17 +14,36 @@ annotate TimesheetService.ActivityLogs with @(UI: {
         }
     },
     SelectionFields    : [date],
-    Identification     : [{Value: ID}],
 
     LineItem           : [
-        {Value: ID},
-        {Value: employee_ID},
-        {Value: project_ID},
-        {Value: date},
-        {Value: timeFrom},
-        {Value: timeTo},
-        {Value: break},
-        {Value: description},
+        {
+            $Type: 'UI.DataField',
+            Value: employee_ID
+        },
+        {
+            $Type: 'UI.DataField',
+            Value: project_ID
+        },
+        {
+            $Type: 'UI.DataField',
+            Value: date
+        },
+        {
+            $Type: 'UI.DataField',
+            Value: timeFrom
+        },
+        {
+            $Type: 'UI.DataField',
+            Value: timeTo
+        },
+        {
+            $Type: 'UI.DataField',
+            Value: break
+        },
+        {
+            $Type: 'UI.DataField',
+            Value: description
+        },
     ],
 
 
@@ -37,10 +56,6 @@ annotate TimesheetService.ActivityLogs with @(UI: {
     FieldGroup #Main   : {
         $Type: 'UI.FieldGroupType',
         Data : [
-            {
-                $Type: 'UI.DataField',
-                Value: ID
-            },
             {
                 $Type: 'UI.DataField',
                 Value: employee_ID

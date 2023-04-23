@@ -14,4 +14,7 @@ service TimesheetService {
     entity Projects () as projection on ts.Projects;
     annotate Projects with @odata.draft.enabled;
 
+    entity Employees () as projection on ts.Employees;
+    annotate Employees with @odata.draft.enabled;
+
 }

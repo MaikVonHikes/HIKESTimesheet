@@ -8,7 +8,7 @@ entity ActivityLogs: managed {
     date: Date;
     timeFrom: Time;
     timeTo: Time;
-    break: Decimal(2, 2);
+    break: Decimal;
     description: String(100);
 }
 
