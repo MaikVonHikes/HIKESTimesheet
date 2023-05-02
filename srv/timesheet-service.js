@@ -17,6 +17,8 @@ module.exports = cds.service.impl(async function () {
             } else { activityLog.hours = 0 }
         })
 
+        //Test
+
     })
 
     //Set Criticality after a READ operation on /Projects
